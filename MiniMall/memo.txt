@@ -1,1 +1,121 @@
-tables
+LmemberDao;
+LmemberBean;
+
+drop sequence latin_seq;
+
+create sequence latin_seq
+increment by 1
+start with 1
+minvalue 1
+maxvalue 10000
+nocache;
+
+drop table latinmem;
+create table latinmem (
+id number,
+name varchar2(15) not null,
+email varchar2(30) not null,
+phone number,
+password varchar2(15)
+);
+
+insert into latinmem values(latin_seq.nextval, 'Son', 'admin@latinmall.com', 3334445555, 1234);
+
+commit;
+
+col num for 99
+col email for a20
+col password for a8
+col name for a10
+
+select * from latinmem;
+
+---------------------------------------------------------------------------
+CateDao
+CateBean
+
+drop sequence cate_seq;
+
+create sequence cate_seq
+increment by 1
+start with 1
+maxvalue 1000
+nocache;
+
+drop table categoria;
+
+create table categoria(
+cnum number primary key,
+corigin varchar2(15) not null,
+category varchar2(15) not null
+);
+commit;
+
+col cum for 99
+col corigin for a12
+col category for a15
+select * from categoria;
+---------------------------------------------------------------------------
+ProductoDao
+ProductoBean
+
+drop sequence pro_seq;
+
+create sequence pro_seq
+increment by 1
+start with 1
+maxvalue 10000
+nocache;
+
+drop table producto;
+
+create table producto (
+pnum number not null primary key,
+pcategory varchar2(15),
+porigin varchar2(15),
+pname varchar2(30),
+pimage varchar2(30),
+pqty number default 0,
+price int default 0,
+pdate varchar2(20),
+pcontents varchar2(300)
+);
+commit;
+
+col pname for a12
+col pcategory for a9
+col porigin for a9
+col pnum for 99 
+col pimage for a12
+col pqty for 99
+col price for 9999
+col pdate for a10
+col pcontents for a10
+
+select * from producto;
+
+---------------------------------------------------------------------------
+OrdersBean
+OrdersDao
+
+drop sequence pay_seq ;
+
+create sequence pay_seq
+increment by 1
+start with 1
+minvalue 0
+maxvalue 10000
+nocache;
+ 
+drop table topay purge ;
+create table topay (
+	orderId number, 
+	memno number, 
+	pnum number,
+	qty number, 
+	amount number 
+);
+
+commit;
+---------------------------------------------------------------------------
+

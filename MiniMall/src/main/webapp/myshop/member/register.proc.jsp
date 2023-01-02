@@ -15,7 +15,7 @@ myshop-member-registerProc.jsp
  	
  	if(cnt > 0) {
  		msg = "Register Success";
- 		url = "main.jsp";
+ 		url = "login.jsp";
  	} else {
  		msg="Register failure";
  		url = "register.jsp";

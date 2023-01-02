@@ -1,5 +1,4 @@
-LmemberDao;
-LmemberBean;
+Ctrl + Shift + R or Shift + F5 // refresh the page
 
 drop sequence latin_seq;
 

@@ -10,12 +10,17 @@
 
 form{
 text-align: center;
-width: 600px;
+width: 800px;
 border: 1px solid lightgray;
 border-radius: 2px;
 margin-top: 130px;
 margin-left: auto;
 margin-right: auto;
+position:relative;
+}
+
+span {
+
 }
 #top {
 	margin-top: 10px;
@@ -60,11 +65,14 @@ font-size: 15px; font-weight: bold;
 		<div id="middle" align="center">
 			<input type="text" class="form-control-sm" name="name" placeholder="Enter your name"> <br>	<br>
 			<input type="text" class="form-control-sm" name="email" placeholder="Enter your email"> 
-			<input class="btn btn-secondary" type="button" id="email_check" value="Email check" onClick="duplicate()"><br><br>
-			<span id="emailmessage"></span>
+			<input class="btn btn-secondary" type="button" id="email_check" value="Email check" onClick="duplicate()">
+			<br>
+			<div id="emailmessage"></div><br>
 			<input type="text" class="form-control-sm" name="phone" placeholder="Enter your phone number"> <br>	<br>
-			<input type="text" class="form-control-sm" name="password" placeholder="Enter your password"> <br> <br> 
-			<input type="text" class="form-control-sm" name="repassword" placeholder="Confirm a password"> <br> <br> 
+			<input type="password" class="form-control-sm" name="password" placeholder="Enter your password" onBlur="return pwcheck()"> <br> <br> 
+			<input type="password" class="form-control-sm" name="repassword" placeholder="Confirm a password" onkeyup="return repwcheck()"> 
+			<br>
+			<div id="pwmessage"></div> <br>
 			<input type="checkbox" class="form-check-input"> 
 			<label class="form-check-label" id="checkLabel">I accept all terms  &amp; conditions.</label><br><br>
 			<input class="btn btn-primary" type="submit" onClick="return writeSave()" value="Sign up">
@@ -74,7 +82,7 @@ font-size: 15px; font-weight: bold;
 		<br>
 		
 		<div id="bottom" align="center">
-			Already have an account? <a href="./main.jsp"> Login now </a> 
+			Already have an account? <a href="./login.jsp"> Login now </a> 
 		</div>
 		
 	</div>

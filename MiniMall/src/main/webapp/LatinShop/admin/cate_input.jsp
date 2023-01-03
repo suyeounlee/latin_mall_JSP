@@ -1,11 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8" %>
 
 <style>
 form {
 	text-align: center;
 	width: 500px;
-	margin-top: 80px;
+	margin-top: 30px;
 	margin-bottom: 250px;
 	margin-left: auto;
 	margin-right: auto;

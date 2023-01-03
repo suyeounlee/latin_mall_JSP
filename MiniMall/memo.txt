@@ -63,7 +63,7 @@ drop sequence pro_seq;
 create sequence pro_seq
 increment by 1
 start with 1
-maxvalue 10000
+maxvalue 100
 nocache;
 
 drop table producto;
@@ -77,19 +77,19 @@ pimage varchar2(30),
 pqty number default 0,
 price int default 0,
 pdate varchar2(20),
-pcontents varchar2(300)
+pcontents varchar2(100)
 );
 commit;
 
-col pname for a12
+col pname for a10
 col pcategory for a9
-col porigin for a9
-col pnum for 99 
-col pimage for a12
+col porigin for a5
+col pnum for 99
+col pimage for a8
 col pqty for 99
-col price for 9999
+col price for 999
 col pdate for a10
-col pcontents for a10
+col pcontents for a8
 
 select * from producto;
 

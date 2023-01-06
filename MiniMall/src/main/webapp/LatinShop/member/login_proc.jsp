@@ -20,10 +20,10 @@ login_proc.jsp <br>
  	String msg, viewPage;
  	if(dto == null) {
  		msg = "Userdata not found";
- 		viewPage = contextPath + "/myshop/member/login.jsp";
+ 		viewPage = contextPath + "/LatinShop/member/login.jsp";
  	}
  	else {
- 		msg = "Welcome.";
+ 		msg = "Welcome!";
  		String uemail = dto.getEmail();
  		int uid = dto.getId();
  		String uname = dto.getName();
@@ -33,10 +33,10 @@ login_proc.jsp <br>
  		session.setAttribute("uname", uname);
  		
  		if(uemail.contains("admin")) {
- 			viewPage = contextPath + "/myshop/admin/main.jsp";
+ 			viewPage = contextPath + "/LatinShop/admin/main.jsp";
  		}
  		else { //user
- 			viewPage = contextPath + "/myshop/user/main.jsp";
+ 			viewPage = contextPath + "/LatinShop/user/main.jsp";
  		}
  	}
 %>

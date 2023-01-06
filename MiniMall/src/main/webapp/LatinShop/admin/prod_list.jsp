@@ -21,7 +21,11 @@ a {
 table {
 	margin: auto;
 	padding: auto;
+	padding-bottom: 15px;
+
 }
+
+
 </style>
 
 <script>
@@ -44,7 +48,7 @@ System.out.println("list.size():" + list.size());
 DecimalFormat df = new DecimalFormat("#,###");
 %>
 
-<table border="1" width="80%">
+<table border="0" width="80%">
 	<caption>
 		<h2>Products List</h2>
 	</caption>

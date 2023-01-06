@@ -12,6 +12,7 @@ margin-top: 1px;
 </style>
 <%@ include file="header.jsp" %>
 
+
 <div>
 <img src="../../images/portada1.PNG" >
 </div>

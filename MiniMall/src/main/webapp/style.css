@@ -87,7 +87,7 @@ text-decoration: none;
 
 .flexbox-container-footer { /* footer */
     margin-bottom: 5px;
-    position:absolute;
+  	/* position:absolute;  */
     bottom: 0;
     display: flex;
     text-align: left;
@@ -97,6 +97,7 @@ text-decoration: none;
     background-color: #eed7c5;
     line-height: 26px;
     height: 80px;
+    
 }
 
 .flexbox-footer1 { /* footer-locationn */
@@ -106,6 +107,14 @@ text-decoration: none;
     word-spacing: 2px;
 }
 
+#page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+#content-wrap {
+	padding-bottom: 0.2rem;
+}
 
 .button {
   background-color: white;
@@ -121,3 +130,4 @@ text-decoration: none;
 	background-color: #4CAF50; /* Green */
 	color: white;
 }
+

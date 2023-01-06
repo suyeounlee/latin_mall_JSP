@@ -36,8 +36,8 @@ form {
 <%
 String[] category = { "select", "agricultural", "fishery", "grains", "coffee", "liquor", "etc" };
 %>
-<br>
-<br>
+
+
 <form method="post" action="cate_input_proc.jsp">
 	<div class="bbox">
 		<h2>Origin & Category</h2>
@@ -70,5 +70,6 @@ String[] category = { "select", "agricultural", "fishery", "grains", "coffee", "
 	<br>
 
 </form>
+
 
 <%@ include file="footer.jsp"%>

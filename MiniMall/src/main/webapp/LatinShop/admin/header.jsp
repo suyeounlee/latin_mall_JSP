@@ -1,13 +1,29 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" %>
 <link rel="stylesheet" href="<%=request.getContextPath() %>/style.css">
-
+<style>
+span {
+color: blue;
+padding-right: 20px;
+}
+a {
+text-decoration: none;
+color: black;
+}
+</style>
 <%
 	String conPath = request.getContextPath();
 %>
-
+<%
+	//id session 설정: loginProc.jsp
+	String uemail = (String)session.getAttribute("uemail"); // loginProc에서 세션 설정한거 가져오는것
+	String uname = (String)session.getAttribute("uname");
+%>	
 	<section>
-	Logout
+	<span>Hello ★<%=uname %>★</span>
+			<a href="<%=conPath %>/LatinShop/user/login.jsp"> Login | </a>
+			<a href="<%=conPath %>/LatinShop/user/register.jsp"> Sign up | </a>
+			<a href="<%=conPath %>/LatinShop/user/logout.jsp"> Logout </a>
 	</section>
 <br>
 	

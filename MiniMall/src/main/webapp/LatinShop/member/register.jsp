@@ -1,8 +1,8 @@
 <%@page import="org.apache.commons.collections.bag.SynchronizedSortedBag"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
- myshop-member-register.jsp <br>
+
+<%@ include file=".././user/header.jsp"%>
  <% System.out.println(request.getContextPath()); %> <!-- /MiniMall -->
  
  
@@ -13,9 +13,12 @@ text-align: center;
 width: 800px;
 border: 1px solid lightgray;
 border-radius: 2px;
-margin-top: 130px;
+margin-top: 20px;
+margin-bottom: 20px;
 margin-left: auto;
 margin-right: auto;
+padding-bottom: 15px;
+padding-top: 10px;
 position:relative;
 }
 
@@ -35,16 +38,23 @@ span {
 a {
 	text-decoration: none;
 }
-input[type="text"] {
+input[type="text"], input[type="password"]{
 	border: 2px solid lightgray;
 	position: relative;
+		height: 40px;
+	width: 200px;
 }
+
 #checkLabel{
 font-weight: lighter;
 }
+
 input[type="submit"] {
 font-size: 15px; font-weight: bold;
+margin-bottom: 12px;
+margin-top: 12px;
 }
+
 #email_check {
 	position: absolute;
 	margin-right : 20px;
@@ -88,3 +98,4 @@ font-size: 15px; font-weight: bold;
 	</div>
 
 </form>
+<%@ include file=".././user/footer.jsp"%>

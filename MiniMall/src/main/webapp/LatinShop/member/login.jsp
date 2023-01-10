@@ -1,20 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-main.jsp
-<br>
-
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
+<%@ include file=".././user/header.jsp"%>
 <style>
+
 
 form{
 text-align: center;
 width: 500px;
 border: 1px solid lightgray;
 border-radius: 2px;
-margin-top: 170px;
+margin-top: 50px;
+margin-bottom: 50px;
 margin-left: auto;
 margin-right: auto;
-background-color: ;	
+padding-bottom: 50px;
+padding-top: 50px;
 }
 
 #top {
@@ -35,11 +36,17 @@ a {
 	text-decoration: none;
 }
 
-input[type="text"] {
+input[type="text"], input[type="password"] {
 	border: 2px solid lightgray;
+	height: 40px;
+	width: 200px;
+
 }
 
 </style>
+
+
+
 <form name="myform" method="post" action="login_proc.jsp">
 
 <div class="login-form">
@@ -50,7 +57,7 @@ input[type="text"] {
 
 		<div id="middle" align="center">
 			<input type="text" class="form-control-sm" placeholder="Enter email" name="email"> <br><br>
-			<input type="text" class="form-control-sm" placeholder="Password" name="password"> <br> <br> 
+			<input type="password" class="form-control-sm" placeholder="Password" name="password"> <br> <br> 
 			<input class="btn btn-primary" type="submit" value="Login" style="font-size: 15px; font-weight: bold;">
 			<br>
 		</div>
@@ -63,3 +70,4 @@ input[type="text"] {
 </div>
 
 </form>
+<%@ include file=".././user/footer.jsp" %>

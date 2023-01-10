@@ -11,6 +11,8 @@ td {
 table {
 	margin: auto;
 	padding: auto;
+	padding-bottom: 20px;
+	
 }
 
 #last {

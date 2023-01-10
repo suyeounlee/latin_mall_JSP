@@ -7,9 +7,6 @@
 
 <style>
 
-#topHeader-index{
-	text-align: center;
-}
 
 /* img {
 	object-fit: auto;

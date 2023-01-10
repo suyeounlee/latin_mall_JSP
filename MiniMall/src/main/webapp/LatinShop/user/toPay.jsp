@@ -2,9 +2,9 @@
 <%@page import="LatinMall.ProductoBean"%>
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 
-<jsp:useBean id="mallCart" class="LatinMall.CartBean" scope="session"/>
+<jsp:useBean id="mallCart" class="LatinMall.CartBean" scope="session" />
 
 <% 
 	ArrayList<ProductoBean> clist = mallCart.getAllProducts();
@@ -20,6 +20,7 @@
 		url = request.getContextPath()+"/LatinShop/user/main.jsp";
 		//주문 완료하고 장바구니 비우기
 		mallCart.removeAllProduct();
+	
 %>
 <script>
 	alert("<%=msg %>");

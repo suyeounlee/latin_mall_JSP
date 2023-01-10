@@ -112,9 +112,11 @@ create table topay (
 	memno number, 
 	pnum number,
 	qty number, 
-	amount number 
+	amount number 	
 );
 
 commit;
+
+select * from topay;
 ---------------------------------------------------------------------------
 

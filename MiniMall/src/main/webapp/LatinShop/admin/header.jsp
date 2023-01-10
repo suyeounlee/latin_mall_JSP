@@ -21,9 +21,9 @@ color: black;
 %>	
 	<section>
 	<span>Hello ★<%=uname %>★</span>
-			<a href="<%=conPath %>/LatinShop/user/login.jsp"> Login | </a>
-			<a href="<%=conPath %>/LatinShop/user/register.jsp"> Sign up | </a>
-			<a href="<%=conPath %>/LatinShop/user/logout.jsp"> Logout </a>
+			<a href="<%=conPath %>/LatinShop/member/login.jsp"> Login | </a>
+			<a href="<%=conPath %>/LatinShop/member/register.jsp"> Sign up | </a>
+			<a href="<%=conPath %>/LatinShop/member/logout.jsp"> Logout </a>
 	</section>
 <br>
 	
@@ -46,7 +46,7 @@ color: black;
          </li>
 
          <li>
-            <a href="">Sales History</a>
+            <a href="orderList.jsp">Sales History</a>
          </li>
 
          <li>

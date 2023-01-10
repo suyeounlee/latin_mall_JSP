@@ -46,6 +46,9 @@ padding-right: 20px;
 }
 
 </style>
+<script type="text/javascript" src="<%=request.getContextPath()%>/js/jquery.js"></script> 
+<script type="text/javascript" src="<%=request.getContextPath() %>/script.js"></script> 
+
 <%
 	String conPath = request.getContextPath();
 	System.out.println(conPath);
@@ -56,11 +59,14 @@ padding-right: 20px;
 	String uname = (String)session.getAttribute("uname");
 %>	
 
+
 	<section>
 	<span>Hello ★<%=uname %>★</span>
+
 			<a href="<%=conPath %>/LatinShop/member/login.jsp"> Login | </a>
 			<a href="<%=conPath %>/LatinShop/member/register.jsp"> Sign up | </a>
 			<a href="<%=conPath %>/LatinShop/member/logout.jsp"> Logout </a>
+
 	</section>
 <br>
 	

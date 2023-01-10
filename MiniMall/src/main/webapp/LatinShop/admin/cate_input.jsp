@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" %>
+<%@ include file="header.jsp"%>
 
 <style>
 form {
@@ -29,9 +30,18 @@ form {
 	margin-bottom: 150px;
 	font-size: 20px;
 }
+
+.button {
+margin-top: 20px;
+
+
+}
+.input{
+height: 25px;
+width: 100px;
+}
 </style>
 
-<%@ include file="header.jsp"%>
 
 <%
 String[] category = { "select", "agricultural", "fishery", "grains", "coffee", "liquor", "etc" };
@@ -45,7 +55,7 @@ String[] category = { "select", "agricultural", "fishery", "grains", "coffee", "
 		<br>
 
 		<div class="box">
-			Origin: <select name="corigin">
+			Origin: <select name="corigin" class="input">
 				<option value="Select">Select</option>
 				<option value="Mexico">Mexico</option>
 				<option value="Peru">Peru</option>
@@ -53,7 +63,7 @@ String[] category = { "select", "agricultural", "fishery", "grains", "coffee", "
 				<option value="Brazil">Brazil</option>
 				<option value="Others">Others</option>
 			</select> <br>
-			<br> Category: <select name="category">
+			<br> Category: <select name="category"  class="input">
 				<%
 				for (int i = 0; i < category.length; i++) {
 				%>
@@ -63,7 +73,7 @@ String[] category = { "select", "agricultural", "fishery", "grains", "coffee", "
 				}
 				%>
 			</select> <br>
-			<br> <input type="submit" value="Register">
+			<br> <input type="submit" class="button" value="Register">
 		</div>
 	</div>
 	<br>

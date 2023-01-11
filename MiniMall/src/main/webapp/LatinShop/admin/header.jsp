@@ -16,7 +16,7 @@ color: black;
 %>
 <%
 	//id session 설정: loginProc.jsp
-	String uemail = (String)session.getAttribute("uemail"); // loginProc에서 세션 설정한거 가져오는것
+	String uemail = (String)session.getAttribute("uemail"); 
 	String uname = (String)session.getAttribute("uname");
 %>	
 	<section>

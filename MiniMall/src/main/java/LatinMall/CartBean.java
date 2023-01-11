@@ -72,7 +72,7 @@ public class CartBean {
 	} //removeProduct
 	
 	public void removeAllProduct() { 
-		clist.remove(clist);
+		clist.removeAll(clist);
 	}//removeAllProduct
 	
 }

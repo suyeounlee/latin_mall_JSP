@@ -4,6 +4,7 @@ Created a Latin product shopping mall in JSP, jQuery, CSS, and Oracle 12c. Addit
 
 Main page
 
+![1 portada](https://github.com/suyeounlee/latin_mall_JSP/assets/102848080/88289132-ad16-4fe5-b916-7318a45db1d7)
 
 When an admin registers a product, the product is displayed on the user interface.
 
